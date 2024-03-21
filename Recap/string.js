@@ -1,4 +1,4 @@
-//* Task 1 - Count how many times a string has the letter a or A
+//*** Task 1 - Count how many times a string has the letter a or A
 function myStr(letters) {
   let count = 0;
 
@@ -16,7 +16,7 @@ let task1 = myStr("aaAdhdAia");
 
 
 
-//* Task 2 - If a given string has either x, replace x by y. if the given string has X, replace it by Y.
+//*** Task 2 - If a given string has either x, replace x by y. if the given string has X, replace it by Y.
 function existOrNot(chars){
     let result = "";
     for(let char of chars){
@@ -38,7 +38,7 @@ let task2 = existOrNot("Ax1XyYZ");
 
 
 
-//* Task 3 - Capitalize Every first Letter of each word in a String
+//*** Task 3 - Capitalize Every first Letter of each word in a String
 function letterCapitalition(sentence){
     const wordsArray = sentence.split(" ");
     const capitalizedWords = wordsArray.map((word) => {
@@ -50,3 +50,22 @@ function letterCapitalition(sentence){
 
 let task3 = letterCapitalition("ax1X yYZ Caab");
 // console.log(task3);
+
+
+
+//*** Task 3 [Alternative]
+function letterCapitalization(sentence) {
+
+    /*
+        \b matches the beginning or end of a word.
+        \w matches any word character (letter, digit, or underscore).
+        /g is the global flag that performs a global search for all matches in the string.
+    */
+   
+    return sentence.replace(/\b\w/g, function(char) {
+        return char.toUpperCase();
+    });
+}
+
+let task3Alternative = letterCapitalization("ax1X yYZ Caab");
+// console.log(task3Alternative);
