@@ -78,3 +78,26 @@ const reversedStatement = reversedWords.join(" ")
 // console.log(reversedStatement);
 
 
+
+
+//* Task 5 
+/* You are given an array of numbers. Count how many times the a number is repeated in the array.
+
+sample-input: numbers = [5,6,11,12,98, 5]
+
+find: 5
+
+output: 2
+
+*/
+let arrayNumbers = [5, 6, 5, 11, 12, 98, 5];
+let find = 5;
+let count = 0;
+
+for(let element of arrayNumbers){
+    if(find === element){
+        count++;
+    }
+}
+
+// console.log(count);
