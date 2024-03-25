@@ -51,3 +51,21 @@ function count_zero(str){
 
 console.log(count_zero("0001110101"));
 
+
+
+//* Task 4 - Write a function to find the longest word in a given string.
+
+function longestWord(statement){
+    let splitedStatement = statement.split(" ");
+    let maxLengthWord = "";
+
+    for(let word of splitedStatement){
+        if(word.length > maxLengthWord.length){
+            maxLengthWord = word;
+        }
+    }
+    return maxLengthWord;
+
+}
+
+console.log(longestWord("I am learning Programming to become a programmer"));
