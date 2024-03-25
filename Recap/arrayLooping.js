@@ -101,3 +101,26 @@ for(let element of arrayNumbers){
 }
 
 // console.log(count);
+
+
+
+
+//* Task 6 - Find the lowest number in the array below.
+
+//! Approach - 1: using min method
+const heights2 = [167, 190, 120, 165, 137];
+
+// let minHeights2 = Math.min(...heights2)
+// console.log(minHeights2);
+
+//! Approach - 1: using min method
+let minHeights2 = Infinity;
+// let minHeights2 = heights2[0];
+
+for(let height2 of heights2){
+    if(height2 < minHeights2){
+        minHeights2 = height2;
+    }
+}
+
+// console.log(minHeights2);
