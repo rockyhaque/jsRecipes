@@ -10,4 +10,4 @@ function ageEven(friendsAge){
 }
 
 const ages = [22, 23, 44];
-console.log(ageEven(ages));
+// console.log(ageEven(ages));
