@@ -10,3 +10,18 @@ function main(name, age, callback){
 }
 
 main("Rocky", 22, show)
+
+
+//* another approach
+function hello(){
+    console.log("Hello from callback");
+}
+
+function main(cb){
+    // console.log(cb); 
+    // [Function: hello]
+    
+    cb();
+}
+
+main(hello);
